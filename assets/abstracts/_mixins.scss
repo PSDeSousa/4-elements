@@ -1,0 +1,32 @@
+// Mixins
+@use 'variables' as *;
+@use 'colors' as *;
+@use 'typography' as *;
+// flex
+@mixin flex($direction:row,$justify:space-between,$align:center,){
+    display:flex;
+    flex-direction:$direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap:wrap;
+}
+// Text
+@mixin text($-color:$text-color,$typo:$primary-font,$text-size:1rem){
+    color:$t-color;
+    font-family:$typo;
+    font-size:$text-size;
+    margin:0.5rem 0;
+}
+//bouttons
+@mixin button($radius:4px,$bg-color:$secondary-color,$color:$primary-color,$margin:0.75rem,$case:none){
+    border-radius:$radius;
+    font-family:$secondary-font;
+    @include flex(row,center,center);
+    margin:$margin;
+    color:$color;
+    background-color:$bg-color;
+    text-transform:$case;
+    p{
+        color:$color
+    }
+}

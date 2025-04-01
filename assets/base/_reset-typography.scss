@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
+// Titre et paragraphes
+h1{
+    @include text($secondary-color,$secondary-font,3rem);
+}
+h2{
+    @include text($secondary-color,$secondary-font,2rem);
+}
+h3{
+    @include text($secondary-color,$terciary-font,2rem);
+}
+p{
+    @include text;
+    margin-top:$v-gap;
+    margin-bottom:$v-gap;
+}
+
+/**
+**************** Mobile **************************
+**/
+//@media (max-width: 1090px) {}
