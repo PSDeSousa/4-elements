@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+.hero-banner{
+    position:relative;
+    video{
+        width:100%;
+    }
+    h1{
+        position : absolute;
+        top : 50%;
+        right: 4%;
+        transform: translatey(-25%);
+    }
+    .form{
+        position : absolute;
+        bottom : 0%;
+        left: 50%;
+        width:50%;
+        transform: translate(-50%, 50%);
+        background-color:$terciary-color;
+        padding : $x-gap-m;
+        border-radius : 18px;
+        input, select{
+            background-color: $input-color;
+            height:3.5rem;
+        }
+        .form-row{
+            @include flex(row,space-between, start);
+            gap:$x-gap-s;
+        }
+        .form-column{
+            @include flex(column,space-between, start);
+            gap:$y-gap-s;
+        }
+        .form-row:last-child{
+            @include flex(column,center, start);
+            position : absolute;
+            bottom : 0;
+            left : 50%;
+            transform: translate(-50%, 50%);
+        }
+    }
+}

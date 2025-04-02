@@ -11,12 +11,12 @@
     display:flex;
     justify-content:space-between;
     align-items: center;
-    padding-right: $h-gap;
-    padding-left: $h-gap;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 .accordion-content, .accordion-content2, .accordion-content3{
-    padding-right: $h-gap;
-    padding-left: $h-gap;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-top:0.5rem;
     margin-bottom:1.5rem;
 }

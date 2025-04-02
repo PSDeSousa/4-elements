@@ -3,3 +3,47 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/colors" as *;
 @use "../abstracts/typography" as *;
+header{
+    position:relative;
+    .desktop-nav{
+        position:absolute;
+        top :0;
+        z-index:10;
+        background-color: $background-transparent;
+        padding-top : 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+    nav{
+        @include flex(row,space-between, center);
+        width : 90%;
+        .secondary-button{
+            margin-left:4rem;
+        }
+    }
+    .navbar{
+        @include flex(row,space-between, center);
+        gap:$x-gap-m;
+    }
+    .socials{
+        @include flex(row,space-between, center);
+        gap:$x-gap-s;
+    }
+    .primary-nav, .user-nav{
+        @include flex(row,space-between, center);
+        gap:$x-gap-m;
+    }
+    .logo{
+        img{
+            width:10rem;
+        }
+        margin-right:1rem;
+    }
+    a{
+        text-decoration: none;
+        color:$primary-color;
+        @include text($primary-color,$quartenary-font,$text-size:1.25rem)
+    }
+    li{
+        list-style: none;
+    }
+}

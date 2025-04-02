@@ -1,0 +1,27 @@
+/**
+**************** Polices *******************************************************
+**/
+/********** playfair Display ******************************/
+/** playfair Display Bold**/
+@font-face {
+  font-family: "Playfair Display Bold";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Bold.ttf");
+}
+/** playfair Display Medium**/
+@font-face {
+  font-family: "Playfair Display Medium";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Medium.ttf");
+}
+/** playfair Display Regular**/
+@font-face {
+  font-family: "Playfair Display Regular";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.ttf");
+}
+/********** Karla ******************************/
+/** Karla Regular**/
+@font-face {
+  font-family: "Karla Regular";
+  src: url("../fonts/karla/Karla-Regular.ttf");
+}
+
+/*# sourceMappingURL=styles.css.map */

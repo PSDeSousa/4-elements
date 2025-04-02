@@ -1,23 +1,30 @@
 /**
 **************** Polices *******************************************************
 **/
-/********** Inter ******************************/
-/** Inter Bold**/
+/********** playfair Display ******************************/
+/** playfair Display Bold**/
 @font-face{
-    font-family:'Inter Bold';
-    src:url('../fonts/inter/Inter_18pt-Bold.ttf')
+    font-family:'Playfair Display Bold';
+    src:url('../fonts/playfair-display/PlayfairDisplay-Bold.ttf')
 }
-/** Inter Medium**/
+/** playfair Display Medium**/
 @font-face{
-    font-family:'Inter Medium';
-    src:url('../fonts/inter/Inter_18pt-Medium.ttf')
-}/** Inter Regular**/
+    font-family:'Playfair Display Medium';
+    src:url('../fonts/playfair-display/PlayfairDisplay-Medium.ttf')
+}
+/** playfair Display Regular**/
 @font-face{
-    font-family:'Inter Regular';
-    src:url('../fonts/inter/Inter_18pt-Regular.ttf')
-}/********** Impact ******************************/
-/** Impact Regular**/
+    font-family:'Playfair Display Regular';
+    src:url('../fonts/playfair-display/PlayfairDisplay-Regular.ttf')
+}
+/********** Karla ******************************/
+/** Karla Regular**/
 @font-face{
-    font-family:'Impact Regular';
-    src:url('../fonts/impact/impact.ttf')
+    font-family:'Karla Regular';
+    src:url('../fonts/karla/Karla-Regular.ttf')
+}
+/** Karla Regular**/
+@font-face{
+    font-family:'Karla Medium';
+    src:url('../fonts/karla/Karla-Medium.ttf')
 }

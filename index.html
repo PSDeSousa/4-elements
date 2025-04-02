@@ -4,17 +4,425 @@
         <meta charset="UFT-8">
         <link href="assets/css/styles.css" rel="stylesheet">
         <link href="assets/css/main.css" rel="stylesheet">
-        <title>bootstrap</title>
+        <title>4-elements</title>
     </head>
     <body>
         <header>
-            
+            <!------------------------------- Nav Desktop ------------------------------------------------------->
+            <div class="container-fluid desktop-nav">
+                <nav>
+                    <!------------------------------- Logo et nav ------------------------------------------------------->
+                    <div class="primary-nav">
+                        <div class="logo">
+                            <a href="index.html" title="réservez un séjour de rêve dans un hôtel 4 éléments">
+                                <img src="assets/images/logo/logo-black.png" alt="page d'accueil">
+                            </a>
+                        </div>
+                        <ul class="navbar">
+                            <li>
+                                <a href="pages/feu.html" title="réservez notre hôtel Feu">Feu</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Air">Air</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Terre">Terre</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Eau">Eau</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!------------------------------- contact socials et compte ------------------------------------------------------->
+                    <div class="user-nav">
+                        <!------------------------------- Liste contact ------------------------------------------------------->
+                        <ul class="socials">
+                            <li>
+                                <a href="#" title="Contactez-nous">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur instagram">
+                                    <img src="assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur facebook">
+                                    <img src="assets/images/icone/facebook-black.png" alt="ouvrir notre page Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                        <!------------------------------- CTA réservation ------------------------------------------------------->
+                            <a href="#">
+                                <div class="secondary-button">
+                                    <p>Reserver</p>
+                                </div>
+                            </a>
+                        <!------------------------------- lien compte membres ------------------------------------------------------->
+                            <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
+                    </div>
+                </nav>
+            </div>
+            <!------------------------------- Nav Mobile (masqué en Desktop) ------------------------------------------------------->
+            <div class="container-fluid mobile-nav">
+                <nav class="d-no">
+                    <div class="primary-nav">
+                        <div class="burger-nav">
+                            <a href="#" title="réservez un séjour de rêve dans un hôtel 4 éléments">
+                                <img src="assets/images/icone/burger-nav.png" alt="menu">
+                            </a>
+                        </div>
+                        <!------------------------------- Nav mobile à afficher sur clic burger ------------------------------------------------------->
+                        <ul class="navbar d-no">
+                            <li>
+                                <a href="pages/feu.html" title="réservez notre hôtel Feu">Feu</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Air">Air</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Terre">Terre</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Eau">Eau</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Contactez-nous">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!------------------------------- réseaux sociaux ------------------------------------------------------->
+                    <div class="socials">
+                        <ul>
+                            <li>
+                                <a href="#" title="Suive-nous sur instagram">
+                                    <img src="assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur facebook">
+                                    <img src="assets/images/icone/facebook-black.png" alt="ouvrir notre page Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
-
+            <!------------------------------- Section banner ------------------------------------------------------->
+            <section class="hero-banner">
+                <div class="container-fluid">
+                    <!------------------------------- video d'accueil ------------------------------------------------------->
+                        <video src="assets/images/illustration/home.mp4"></video>
+                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                    <!------------------------------- Formulaire ------------------------------------------------------->
+                    <div class="form">
+                        <h4>Rechercher une disponiblité</h4>
+                        <form id="form" class="form-recherche">
+                            <div class="form-row">
+                                <div class="form-column">
+                                    <label>Choisir un hôtel</label>
+                                    <select id="chercheHotel">
+                                        <option value="feu">Feu</option>
+                                        <option value="air">Air</option>
+                                        <option value="terre">Terre</option>
+                                        <option value="eau">eau</option>
+                                    </select>
+                                    <div id="chercheHotelError" class="error"></div>
+                                </div>
+                                <div class="form-column">
+                                    <label>Nbr de personnes</label>
+                                    <input type="number" id="ChercheNbPers" value="2">
+                                    <div id="ChercheNbPersError" class="error"></div>
+                                </div>
+                                <div class="form-column">
+                                    <label>Choisir une date d'arrivée</label>
+                                    <input type="date" id="ChercheDateArr">
+                                    <div id="ChercheDateArrError" class="error"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="primary-button">
+                                    <p>Chercher</p>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!------------------------------- Liste les hôtels ------------------------------------------------------->
+            <section class="description">
+                <div class="container-fluid">
+                    <!------------------------------- Description d'1 hôtel ------------------------------------------------------->
+                    <div class="row right-card">
+                        <div class="hotel-card right-card">
+                            <!------------------------------- Article décrivant l'hôtel ------------------------------------------------------->
+                            <article>
+                                <h2>Hôtel Feu</h2>
+                                <div class="location">
+                                    <img src="assets/images/icone/map-pin.png" alt="location">
+                                    <p>Finlande</p>
+                                </div>
+                                <!------------------------------- Evaluation ------------------------------------------------------->
+                                <div class="rates">
+                                    <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                    <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                    <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                    <img src="assets/images/icone/rate-star-light.png" alt="rate-evaluation">
+                                    <p>(325 avis)</p>
+                                </div>
+                                <!------------------------------- Description ------------------------------------------------------->
+                                <p>L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande.</p>
+                                <p>Feu de laterre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.</p>
+                                <!------------------------------- Bouton de réservation ------------------------------------------------------->
+                                <a href="reservation.html">
+                                    <div class="primary-button">
+                                        <p>Reserver</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <!------------------------------- Gallerie d'images de l'hôtel (à dynamiser) ------------------------------------------------------->
+                            <div class="gallery">
+                                <div class="gallery-row right-card">
+                                    <div class="cell">
+                                        <img src="assets/images/illustration/feu-igloo.jpg" alt="">
+                                    </div>
+                                    <div class="cell">
+                                        <img src="assets/images/illustration/feu-aurore.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row left-card">
+                        <div class="hotel-card left-card">
+                            <!------------------------------- Article décrivant l'hôtel ------------------------------------------------------->
+                            <article>
+                                <h2>Hôtel air</h2>
+                                <div class="location">
+                                    <img src="assets/images/icone/map-pin.png" alt="location">
+                                    <p>Brésil</p>
+                                </div>
+                                <!------------------------------- Evaluation ------------------------------------------------------->
+                                <div class="rates">
+                                    <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                    <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                    <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                    <img src="assets/images/icone/rate-star-light.png" alt="rate-evaluation">
+                                    <p>(325 avis)</p>
+                                </div>
+                                <!------------------------------- Description ------------------------------------------------------->
+                                <p>L'hôtel Air se situe à la frontière du Brésil et du Pérou.</p>
+                                <p>C'est un concept architectural innovant qui a permis une implantation à la cîme de la forêt pour offrir un panorama vertigineux et cotoyerchaque matin, de votre chambre (avec ou sans piscine), les oiseaux à votre réveil.</p>
+                                <!------------------------------- Bouton de réservation ------------------------------------------------------->
+                                <a href="reservation.html">
+                                    <div class="primary-button">
+                                        <p>Reserver</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <!------------------------------- Gallerie d'images de l'hôtel (à dynamiser) ------------------------------------------------------->
+                            <div class="gallery">
+                                <div class="gallery-row left-card">
+                                    <div class="cell">
+                                        <img src="assets/images/illustration/air-buiding.jpg" alt="">
+                                    </div>
+                                    <div class="cell">
+                                        <img src="assets/images/illustration/air-bridge.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!------------------------------- Description d'1 hôtel ------------------------------------------------------->
+                <div class="row right-card">
+                    <div class="hotel-card right-card">
+                        <!------------------------------- Article décrivant l'hôtel ------------------------------------------------------->
+                        <article>
+                            <h2>Hôtel Terre</h2>
+                            <div class="location">
+                                <img src="assets/images/icone/map-pin.png" alt="location">
+                                <p>Thaïlande</p>
+                            </div>
+                            <!------------------------------- Evaluation ------------------------------------------------------->
+                            <div class="rates">
+                                <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                <img src="assets/images/icone/rate-star-light.png" alt="rate-evaluation">
+                                <p>(325 avis)</p>
+                            </div>
+                            <!------------------------------- Description ------------------------------------------------------->
+                            <p>L'hôtel Terre est situé dans des grottes naturelles en Thaïlande. Retaillées et aménagées avec beaucoup de soin, les chambres de l'hôtel vous offriront soit la fraîcheur et l'apaisement à près de vingt mètres de profondeur, soit un hâvre de paix ouvrant sur l'horizon de la mer au loin.</p>
+                            <!------------------------------- Bouton de réservation ------------------------------------------------------->
+                            <a href="reservation.html">
+                                <div class="primary-button">
+                                    <p>Reserver</p>
+                                </div>
+                            </a>
+                        </article>
+                        <!------------------------------- Gallerie d'images de l'hôtel (à dynamiser) ------------------------------------------------------->
+                        <div class="gallery right-card">
+                            <div class="gallery-row right-card">
+                                <div class="cell">
+                                    <img src="assets/images/illustration/terre-room.jpg" alt="">
+                                </div>
+                                <div class="cell">
+                                    <img src="assets/images/illustration/terre-restaurant.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row left-card">
+                    <div class="hotel-card left-card">
+                        <!------------------------------- Article décrivant l'hôtel ------------------------------------------------------->
+                        <article>
+                            <h2>Hôtel Eau</h2>
+                            <div class="location">
+                                <img src="assets/images/icone/map-pin.png" alt="location">
+                                <p>île du pascifique</p>
+                            </div>
+                            <!------------------------------- Evaluation ------------------------------------------------------->
+                            <div class="rates">
+                                <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                <img src="assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                <img src="assets/images/icone/rate-star-light.png" alt="rate-evaluation">
+                                <p>(325 avis)</p>
+                            </div>
+                            <!------------------------------- Description ------------------------------------------------------->
+                            <p>L'hôtel Eau est situé sur une île de 2 kilomètres carrés très exactement équidistante de Vladivostok et de Los Angeles. C'est le milieu duPacifique. Vous y disposerez de votre plage, de votre bateau et de votre majordome privés. Votre chambre est un caisson immergé à deux mètres sous l'eau.</p>
+                            <!------------------------------- Bouton de réservation ------------------------------------------------------->
+                            <a href="reservation.html">
+                                <div class="primary-button">
+                                    <p>Reserver</p>
+                                </div>
+                            </a>
+                        </article>
+                        <!------------------------------- Gallerie d'images de l'hôtel (à dynamiser) ------------------------------------------------------->
+                        <div class="gallery left-card">
+                            <div class="gallery-row left-card">
+                                <div class="cell">
+                                    <img src="assets/images/illustration/eau-room.jpg" alt="">
+                                </div>
+                                <div class="cell">
+                                    <img src="assets/images/illustration/eau-diving.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            </section>
+            <section class="information">
+                <div class="container">
+                    <div class="row">
+                        <article>
+                            <h3>Le concept</h3>
+                            <div class="content">
+                                <div class="cell">
+                                    <img src="assets/images/illustration/concept-house.jpg" alt="">
+                                </div>
+                                <p>Depuis l'ouverture de ses 4 hôtels en 2012, 4 Éléments s'est démarqué en proposant des établissements exceptionnels dans des lieux uniques, symbolisant les quatre éléments : terre, eau, air et feu. Ces hôtels insolites, construits dans des endroits inattendus à travers la planète, incarnent notre volonté de révolutionner le tourisme en intégrant luxe, aventure et vision à long terme. Chacun de nos établissements offre un environnement et un service uniques, alliant la rigueur de l'hôtellerie de luxe à une proximité quotidienne avec les habitants. Explorez les environs avec des guides experts tels que des ethnologues, astrophysiciens, géologues et climatologues. Ce que nous vous proposons n'est pas un simple "tour", mais une véritable révolution.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <h3>L'architecture</h3>
+                            <div class="content">
+                                <div class="cell">
+                                    <img src="assets/images/illustration/architech-building.jpg" alt="">
+                                </div>
+                                <p>L'architecture innovante constitue une étape supplémentaire vers l'exploration de l'Espace, représentant l'extension de notre civilisation vers ses aspects les plus avancés. S'immerger dans l'un de nos hôtels, c'est embrasser une expérience sensorielle où l'on peut se ressourcer au contact des matières représentatives des quatre éléments. C'est une opportunité de se découvrir en harmonie avec la terre, l'air, l'eau et le feu. Notre approche unique vise à transcender les frontières traditionnelles du voyage en offrant une expérience qui éveille les sens et connecte les visiteurs à la quintessence de chaque élément. En plongeant dans nos établissements, les clients sont invités à explorer l'intersection fascinante entre l'innovation architecturale etla nature environnante.</p>
+                            </div>
+                        </article>
+                        </div>
+                        <div class="row">
+                        <article>
+                            <div class="content">
+                                <h3>Le mot du créateur</h3>
+                                <img src="assets/images/icone/double-quotes.png" alt="">
+                                <p>L'architecture innovante représente une avancée vers l'exploration de l'Espace, symbolisant l'extension de notre civilisation vers ses plus grandes aspirations. S'immerger dans nos hôtels, c'est vivre une expérience sensorielle, se ressourcer au contact des matières des quatre éléments. C'est une découverte en harmonie avec la terre, l'air, l'eau et le feu, où chaque détail architectural offre une connexion profonde avec ces éléments fondamentaux. Les témoignages de nos visiteurs soulignent l'impact transformateur de cette expérience immersive, décrivant une reconnexion unique avec la nature et une redécouverte de soi au sein de cet environnement exceptionnel. Cette approche révolutionnaire redéfinit les attentes du voyage, offrant non seulement un hébergement luxueux, mais une véritable aventure sensorielle qui transcende les limites conventionnelles du tourisme.</p>
+                                <p>Trinh Xuan Thuan</p>
+                                <p>Co-fondateur de 4 Eléments</p>
+                            </div>
+                            <div class="cell">
+                                <img src="assets/images/illustration/creator.jpg" alt="">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="column">
+                        <div class="logo">
+                            <a href="index.html" title="réservez un séjour de rêve dans un hôtel 4 éléments">
+                                <img src="assets/images/logo/logo-black.png" alt="page d'accueil">
+                            </a>
+                         </div> 
+                         <p>N’attendez plus pour vivre l’expérience 4 éléments le temps d’une nuit.</p>
+                         <!------------------------------- Liste contact ------------------------------------------------------->
+                        <ul class="socials">
+                            <li>
+                                <a href="#" title="Suive-nous sur instagram">
+                                    <img src="assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur facebook">
+                                    <img src="assets/images/icone/facebook-black.png" alt="ouvrir notre page Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>
+                                <h5>Adresse : </h5>
+                                <p>8 avenue exemple</p>
+                            </li>
+                            <li>
+                                <h5>Ouverture : </h5>
+                                <p>Tous les jours de 9h à 20h30</p>
+                            </li>
+                            <li>
+                                <h5>Tél : </h5>
+                                <p>33 08 280 28002</p>
+                            </li>
+                        </ul>
+                        <!------------------------------- CTA réservation ------------------------------------------------------->
+                        <a href="#">
+                            <div class="terciary-button">
+                                <p>Reserver en ligne</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <ul class="foot-nav">
+                            <li>
+                                <a href="#" title="Lire les mentions légales">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Lire les crédits">Crédits</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Lire les conditions Générales de Vente">CGV</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Lire les clauses de confidentialité">Confidentialité</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
         <script src="script.js"></script>
     </body>

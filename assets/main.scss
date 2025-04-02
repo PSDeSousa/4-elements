@@ -11,6 +11,9 @@
 // 3 Import des layouts
 @use "layout/header" as *;
 @use "layout/footer" as *;
+@use "layout/hero-banner" as *;
+@use "layout/description" as *;
+@use "layout/information" as *;
 // 4 Import des composants
 @use "components/buttons/primary" as *;
 @use "components/buttons/secondary" as *;

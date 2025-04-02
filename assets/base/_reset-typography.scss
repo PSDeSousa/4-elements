@@ -4,18 +4,26 @@
 @use '../abstracts/typography' as *;
 // Titre et paragraphes
 h1{
-    @include text($secondary-color,$secondary-font,3rem);
+    @include text($terciary-color,$secondary-font,6.25rem);
+    text-align: right;
 }
 h2{
-    @include text($secondary-color,$secondary-font,2rem);
+    @include text($primary-color,$secondary-font,6rem);
 }
 h3{
-    @include text($secondary-color,$terciary-font,2rem);
+    @include text($primary-color,$terciary-font,3rem);
+}
+h4{
+    @include text($primary-color,$terciary-font,1.875rem);
+}
+h5{
+    @include text($primary-color,$primary-font,1.25rem);
 }
 p{
     @include text;
-    margin-top:$v-gap;
-    margin-bottom:$v-gap;
+}
+.legend{
+    @include text($primary-color,$primary-font,0.9375rem);
 }
 
 /**

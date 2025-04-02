@@ -3,3 +3,46 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/colors" as *;
 @use "../abstracts/typography" as *;
+footer{
+    .row{
+        @include flex(row,space-between, stretch);
+        gap : $x-gap-m;
+        margin-top : $y-gap-s;
+        margin-bottom : $y-gap-s;
+        .column{
+            flex : 1 1 calc(40% - $x-gap-m);
+            >p{
+                width: 50%;
+            }
+            .logo{
+                img{
+                    width:10rem;
+                }
+                margin-right:1rem;
+            }
+            .socials{
+                @include flex(row,space-between, center);
+                gap:$x-gap-s;
+            }
+            ul{
+                @include flex(column, space-between, stretch);
+                li{
+                    list-style : none;
+                    @include text;
+                    @include flex(row,start, center);
+                    gap:$x-gap-s;
+                    a{
+                        @include text;
+                    }
+                }
+            }
+
+        }
+        .column:last-child{
+            flex : 1 1 calc(20% - $x-gap-m);
+            .foot-nav{
+                height : 100%;
+            }
+        }
+    }
+}

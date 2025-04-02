@@ -3,3 +3,10 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/colors" as *;
 @use "../abstracts/typography" as *;
+
+.d-no{
+    display:none;
+}
+.d-yes{
+    display:block;
+}

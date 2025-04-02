@@ -11,14 +11,14 @@
     flex-wrap:wrap;
 }
 // Text
-@mixin text($-color:$text-color,$typo:$primary-font,$text-size:1rem){
-    color:$t-color;
+@mixin text($-color:$primary-color,$typo:$primary-font,$text-size:1rem){
+    color:$-color;
     font-family:$typo;
     font-size:$text-size;
     margin:0.5rem 0;
 }
 //bouttons
-@mixin button($radius:4px,$bg-color:$secondary-color,$color:$primary-color,$margin:0.75rem,$case:none){
+@mixin button($radius:6px,$bg-color:$secondary-color,$color:$light-color,$margin:0.75rem,$case:none){
     border-radius:$radius;
     font-family:$secondary-font;
     @include flex(row,center,center);
