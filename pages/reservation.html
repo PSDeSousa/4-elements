@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UFT-8">
+        <link href="../assets/css/styles.css" rel="stylesheet">
+        <link href="../assets/css/main.css" rel="stylesheet">
+        <title>4-elements</title>
+    </head>
+    <body>
+        <header>
+            <!------------------------------- Nav Desktop ------------------------------------------------------->
+            <div class="container-fluid desktop-nav line">
+                <nav>
+                    <!------------------------------- Logo et nav ------------------------------------------------------->
+                    <div class="primary-nav">
+                        <div class="logo">
+                            <a href="../index.html" title="réservez un séjour de rêve dans un hôtel 4 éléments">
+                                <img src="../assets/images/logo/logo-black.png" alt="page d'accueil">
+                            </a>
+                        </div>
+                        <ul class="navbar">
+                            <li>
+                                <a href="feu.html" title="réservez notre hôtel Feu">Feu</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Air">Air</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Terre">Terre</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Eau">Eau</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!------------------------------- contact socials et compte ------------------------------------------------------->
+                    <div class="user-nav">
+                        <!------------------------------- Liste contact ------------------------------------------------------->
+                        <ul class="socials">
+                            <li>
+                                <a href="#" title="Contactez-nous">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur instagram">
+                                    <img src="../assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur facebook">
+                                    <img src="../assets/images/icone/facebook-black.png" alt="ouvrir notre page Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                        <!------------------------------- CTA réservation ------------------------------------------------------->
+                            <a href="reservation.html">
+                                <div class="secondary-button">
+                                    <p>Reserver</p>
+                                </div>
+                            </a>
+                        <!------------------------------- lien compte membres ------------------------------------------------------->
+                            <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
+                    </div>
+                </nav>
+            </div>
+            <!------------------------------- Nav Mobile (masqué en Desktop) ------------------------------------------------------->
+            <div class="container-fluid mobile-nav">
+                <nav class="d-no">
+                    <div class="primary-nav">
+                        <div class="burger-nav">
+                            <a href="#" title="réservez un séjour de rêve dans un hôtel 4 éléments">
+                                <img src="../assets/images/icone/burger-nav.png" alt="menu">
+                            </a>
+                        </div>
+                        <!------------------------------- Nav mobile à afficher sur clic burger ------------------------------------------------------->
+                        <ul class="navbar d-no">
+                            <li>
+                                <a href="feu.html" title="réservez notre hôtel Feu">Feu</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Air">Air</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Terre">Terre</a>
+                            </li>
+                            <li>
+                                <a href="#" title="réservez notre hôtel Eau">Eau</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Contactez-nous">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!------------------------------- réseaux sociaux ------------------------------------------------------->
+                    <div class="socials">
+                        <ul>
+                            <li>
+                                <a href="#" title="Suive-nous sur instagram">
+                                    <img src="../assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur facebook">
+                                    <img src="../assets/images/icone/facebook-black.png" alt="ouvrir notre page Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="reservation">
+                <div class="container">
+                    <div class="row">
+                        <!--------------------------Formulaire de réservation---------------------------------------------->
+                        <form id="form" class="form-reservation">
+                            <!-------------------------- En tête du formulaire ---------------------------------------------->
+                            <h3>Réservation</h3>
+                            <h5>Informations de réservation</h5>
+                            <div id="idClient" class="form-block">
+                                <label>Prénom et Nom</label>
+                                <input type="text" id="fullname" >
+                                <div id="fullnameError" class="error"></div>
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label>Email</label>
+                                        <input type="text" id="email" >
+                                        <div id="emailError" class="error"></div>
+                                    </div>
+                                    <div class="form-column">
+                                        <label>Téléphone</label>
+                                        <input type="text" id="phone" >
+                                        <div id="phoneError" class="error"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row adress">
+                                    <div class="form-column">
+                                        <label>n° rue</label>
+                                        <input type="number" id="streetNb" >
+                                        <div id="streetNbError" class="error"></div>
+                                    </div>
+                                    <div class="form-column">
+                                        <label>Rue</label>
+                                        <input type="text" id="street" >
+                                        <div id="streetError" class="error"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row adress">
+                                    <div class="form-column">
+                                        <label>code postal</label>
+                                        <input type="number" id="postal" >
+                                        <div id="postalError" class="error"></div>
+                                    </div>
+                                    <div class="form-column">
+                                        <label>ville</label>
+                                        <input type="text" id="city" >
+                                        <div id="cityError" class="error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Choix de l'hôtel et de la chambre</h5>
+                            <div id="logement" class="form-block">
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label>Hôtel</label>
+                                        <select id="hotel">
+                                            <option value="feu">Hôtel Feu</option>
+                                            <option value="air">Hôtel Air</option>
+                                            <option value="terre">Hôtel Terre</option>
+                                            <option value="eau">Hôtel Eau</option>
+                                        </select>
+                                        <div id="hotelError" class="error"></div>
+                                    </div>
+                                    <div id="roomChoise" class="d-no">
+                                        <div class="form-column">
+                                            <label>Chambre</label>
+                                            <select id="room">
+                                                <option value="igloo">Igloo : 500€ / nuit</option>
+                                                <option value="suite">Suite laponne : 850€ / nuit</option>
+                                            </select>
+                                            <div id="roomError" class="error"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Séjour</h5>
+                            <div id="infoSejour" class="form-row">
+                                <div class="form-column">
+                                    <label>Nombre de personnes</label>
+                                    <input type="number" id="nbConvive" value="0">
+                                    <div id="nbConviveError" class="error"></div>
+                                </div>
+                                <div class="form-column">
+                                    <label>Date d'arrivée</label>
+                                    <input type="date" id="dateArr">
+                                    <div id="dateArrError" class="error"></div>
+                                </div>
+                                <div class="form-column">
+                                    <label>Date de départ</label>
+                                    <input type="date" id="dateDep">
+                                    <div id="dateDepError" class="error"></div>
+                                </div>
+                            </div>
+                            <div id="options">
+                                <h5>Options</h5>
+                                <div class="form-row">
+                                    <label>Chauffeur</label>
+                                    <input type="checkbox" id="chauffeur">
+                                    <label>Guide</label>
+                                    <input type="checkbox" id="guide">
+                                    <label>Petit-déjeuner</label>
+                                    <input type="checkbox" id="petitDej">
+                                    <label>Repas</label>
+                                    <input type="checkbox" id="meal">
+                                </div>
+                                <div id="mealOption" class="d-no">
+                                    <h5>Repas</h5>
+                                    <div class="form-row">
+                                        <label>midi</label>
+                                        <input type="checkbox" id="lunch">
+                                        <label>soir</label>
+                                        <input type="checkbox" id="diner">
+                                        <label>ponctuel</label>
+                                        <input type="checkbox" id="ponctual">
+                                    </div>
+                                    <div id="mealOptionError" class="error"></div>
+                                </div>
+                                <div id="diet" class="d-no">
+                                    <h5>Régime alimentaire</h5>
+                                    <div class="form-row">
+                                        <label>Non</label>
+                                        <input type="checkbox" id="noRegime">
+                                        <label>Vegan</label>
+                                        <input type="checkbox" id="vegan">
+                                        <label>Végétarien</label>
+                                        <input type="checkbox" id="vegetarian">
+                                    </div>
+                                    <div id="dietError" class="error"></div>
+                                    <h5>Restrictions alimentaires</h5>
+                                    <div class="form-row">
+                                        <label>Non</label>
+                                        <input type="checkbox" id="noRestriction">
+                                        <label>Sans gluten</label>
+                                        <input type="checkbox" id="gluten">
+                                        <label>Sans lactose</label>
+                                        <input type="checkbox" id="lactose">
+                                        <label>Autres allergies et intolérances</label>
+                                        <input type="checkbox" id="checkAllergics">
+                                    </div>
+                                    <div id="restrictionError" class="error"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="primary-button">
+                                    <p>Enregistrer</p>
+                                </button>
+                                <a href="#" id="resetReservation" class="primary-button">
+                                    <p>Annuler</p>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!------------------------------- Résumé de la réservation ------------------------------------------------------->
+        <section id="modalReservation" class=" d-no">
+            <div class="container summary-modal">
+                <div class="row">
+                    <div id="summary"></div>
+                    <div class="cta">
+                        <a href="#" id="paiement" class="primary-button">
+                            <p>Payer</p>
+                        </a>
+                        <a href="#" id="closeReservation" class="primary-button">
+                            <p>Fermer</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="column">
+                        <div class="logo">
+                            <a href="../index.html" title="réservez un séjour de rêve dans un hôtel 4 éléments">
+                                <img src="../assets/images/logo/logo-black.png" alt="page d'accueil">
+                            </a>
+                         </div> 
+                         <p>N’attendez plus pour vivre l’expérience 4 éléments le temps d’une nuit.</p>
+                         <!------------------------------- Liste contact ------------------------------------------------------->
+                        <ul class="socials">
+                            <li>
+                                <a href="#" title="Suive-nous sur instagram">
+                                    <img src="../assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Suive-nous sur facebook">
+                                    <img src="../assets/images/icone/facebook-black.png" alt="ouvrir notre page Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>
+                                <h5>Adresse : </h5>
+                                <p>8 avenue exemple</p>
+                            </li>
+                            <li>
+                                <h5>Ouverture : </h5>
+                                <p>Tous les jours de 9h à 20h30</p>
+                            </li>
+                            <li>
+                                <h5>Tél : </h5>
+                                <p>33 08 280 28002</p>
+                            </li>
+                        </ul>
+                        <!------------------------------- CTA réservation ------------------------------------------------------->
+                        <a href="reservation.html">
+                            <div class="terciary-button">
+                                <p>Reserver en ligne</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <ul class="foot-nav">
+                            <li>
+                                <a href="#" title="Lire les mentions légales">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Lire les crédits">Crédits</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Lire les conditions Générales de Vente">CGV</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Lire les clauses de confidentialité">Confidentialité</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../javascript/script-reservation.js"></script>
+    </body>
+</html>

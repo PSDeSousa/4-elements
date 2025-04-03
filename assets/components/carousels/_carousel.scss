@@ -3,15 +3,23 @@
 @use '../../abstracts/colors' as *;
 @use '../../abstracts/typography' as *;
 
-.forward-btn{
-    transform : rotate(180deg) translatey(+18%);
-}
 .carousel{
-    //max-width: 86rem;
-    @include flex(row, space-between, center);
-    flex-wrap: nowrap;
+    flex : 1.5 1 calc(60% - $x-gap-l);
+    overflow: hidden; //pour masquer les cards qui dépassent
+    .carousel-row{
+        @include flex(row,start,center);
+        flex-wrap: nowrap;
+        gap : $x-gap-m;
+        width: max-content; //pour empêcher le débordement
+    }
 }
 
+.testimonials{
+    .carousel-row{
+        width : 100%;
+        @include flex(row,space-between,start);
+    }       
+}
 /**
 **************** Mobile **************************
 **/

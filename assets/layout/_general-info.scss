@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+.general-info{
+    .row{
+        width:100%;
+        @include flex(row,space-between,start);
+        li{
+            list-style : none;
+        }
+        .column{
+            width : 30rem;
+            >ul{
+                width : 100%;
+                @include flex(column, space-between,start);
+                li{
+                    @include flex(row, start,center);
+                    width : calc(100%  - $x-gap-s);
+                    gap : $x-gap-s;
+                    img{
+                        width : 1.8rem;
+                    }
+                    ul{
+                        @include flex(row, start,start);
+                        width : calc(100% - 1.8rem - $x-gap-s);
+                        li{
+                            width : calc(50%  - $x-gap-s);
+                        }
+                        .content{
+                            width : calc(100%  - $x-gap-s);
+                        }
+                    }
+                    .content{
+                        width : calc(100% - 1.8rem - $x-gap-s);
+                    }
+                }
+            }
+        }
+    }
+    .row:last-child{
+        @include flex(column,space-between,start);
+    }
+}

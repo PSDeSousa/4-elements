@@ -1,0 +1,102 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+
+.reservation{
+    padding-top : $y-gap-l;
+    .form-reservation{
+        background-color:$terciary-color;
+        padding : $x-gap-m;
+        border-radius : 18px;
+        input, select{
+            background-color: $input-color;
+            height:3.5rem;
+        }
+        .primary-button{
+            margin-bottom:$y-gap-s;
+        }
+        h3{
+            margin-top:$y-gap-s;
+            margin-bottom:$y-gap-s;
+        }
+        label{
+            margin-top:$y-gap-s;
+            margin-bottom:$y-gap-s;
+        }
+        .form-block{
+            width : 100%;
+            @include flex(column,start,start);
+            margin-bottom:$y-gap-s;
+            >input{
+                width : 100%;
+            }
+        }
+        .form-row{
+            width : 100%;
+            //margin-top: $y-gap-s;
+            @include flex(row,space-between,center);
+            gap:$x-gap-s;
+            .form-column{
+                flex : 1 1 calc(50% - $y-gap-s);
+                @include flex(column,start,start);
+                //gap:$y-gap-s;
+                >select{
+                    width : 100%;
+                }
+                >input{
+                    width : 100%;
+                }
+            }
+            .form-row{
+                flex : 1 1 calc(50% - $x-gap-s);
+            }
+        }
+        .adress{
+            .form-column:first-child{
+                flex : 1 1 calc(30% - $x-gap-s);
+            }
+            .form-column:last-child{
+                flex : 1 1 calc(70% - $x-gap-s);
+            }
+        }
+        #infoSejour{
+            .form-column{
+                flex : 1 1 calc(33% - $y-gap-s);
+                @include flex(column,start,start);
+            }  
+        }
+        #options{
+            .form-row{
+                flex : 1 1 calc(25% - $y-gap-s);
+                justify-content: start;
+                gap:1rem;
+                }
+        }
+        .error{
+            background-color: $alert-color;
+            border-radius : 2px;
+        }
+    }
+}
+.summary-modal{
+    background-color:$light-color;
+    padding : $x-gap-m;
+    border-radius : 18px;
+    position : fixed;
+    top : 20%;
+    left : 50%;
+    transform : translatex(-50%);
+    .cta{
+        @include flex(row, space-between, center);
+    }
+    #summary{
+        margin-top: 1rem;
+        h3{
+            @include text($primary-color,$secondary-font,1rem);
+        }
+        border-radius : 4px;
+        padding : 1rem;
+    }
+}

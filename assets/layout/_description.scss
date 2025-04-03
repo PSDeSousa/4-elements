@@ -7,4 +7,11 @@
     .row:first-child{
         margin-top : $y-gap-l * 4;
     }
+    .location{
+        @include flex(row, start, center);
+        gap: $x-gap-s;
+        img{
+            width : 1.4rem;
+        }
+    }
 }

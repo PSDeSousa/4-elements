@@ -18,7 +18,7 @@
     margin:0.5rem 0;
 }
 //bouttons
-@mixin button($radius:6px,$bg-color:$secondary-color,$color:$light-color,$margin:0.75rem,$case:none){
+@mixin button($radius:6px,$bg-color:$secondary-color,$color:$light-color,$margin:0,$case:none){
     border-radius:$radius;
     font-family:$secondary-font;
     @include flex(row,center,center);

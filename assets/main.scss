@@ -14,6 +14,8 @@
 @use "layout/hero-banner" as *;
 @use "layout/description" as *;
 @use "layout/information" as *;
+@use "layout/general-info" as *;
+@use "layout/plus" as *;
 // 4 Import des composants
 @use "components/buttons/primary" as *;
 @use "components/buttons/secondary" as *;
@@ -25,6 +27,7 @@
 @use "pages/home" as *;
 @use "pages/contact" as *;
 @use "pages/page-404" as *;
+@use "pages/reservation" as *;
 // 6 Import des thèmes
 // 7 Import des utilitaires
 @use "utils/visibility" as *;
