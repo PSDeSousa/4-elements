@@ -9,7 +9,7 @@
     <body>
         <header>
             <!------------------------------- Nav Desktop ------------------------------------------------------->
-            <div class="container-fluid desktop-nav">
+            <div class="container-fluid desktop-nav desktop">
                 <nav>
                     <!------------------------------- Logo et nav ------------------------------------------------------->
                     <div class="primary-nav">
@@ -63,47 +63,58 @@
                 </nav>
             </div>
             <!------------------------------- Nav Mobile (masqué en Desktop) ------------------------------------------------------->
-            <div class="container-fluid mobile-nav">
-                <nav class="d-no">
+            <div class="container-fluid mobile-nav mobile">
+                <nav>
                     <div class="primary-nav">
-                        <div class="burger-nav">
-                            <a href="#" title="réservez un séjour de rêve dans un hôtel 4 éléments">
+                        <div id="burgerMenu" class="burger-nav">
+                            <a href="#" title="accéder au menu">
                                 <img src="assets/images/icone/burger-nav.png" alt="menu">
                             </a>
                         </div>
+                        <!--------------------Affichage quand le burger est cliqué----------------->
+                        <div id="closeMenu" class="burger-nav d-no">
+                            <a href="#" title="fermer le menu">
+                                <img src="assets/images/icone/close.png" alt="fermer le menu">
+                            </a>
+                        </div>
                         <!------------------------------- Nav mobile à afficher sur clic burger ------------------------------------------------------->
-                        <ul class="navbar d-no">
-                            <li>
-                                <a href="pages/feu.html" title="réservez notre hôtel Feu">Feu</a>
-                            </li>
-                            <li>
-                                <a href="#" title="réservez notre hôtel Air">Air</a>
-                            </li>
-                            <li>
-                                <a href="#" title="réservez notre hôtel Terre">Terre</a>
-                            </li>
-                            <li>
-                                <a href="#" title="réservez notre hôtel Eau">Eau</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Contactez-nous">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
-                            </li>
-                        </ul>
+                        <div id="mobileNav" class="d-no">
+                            <ul class="navbar">
+                                <li  class="in-page">
+                                    <a href="index.html" title="Découvrez nos hôtels">accueil</a>
+                                </li>
+                                <li>
+                                    <a href="pages/feu.html" title="réservez notre hôtel Feu">Feu</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="réservez notre hôtel Air">Air</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="réservez notre hôtel Terre">Terre</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="réservez notre hôtel Eau">Eau</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Contactez-nous">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!------------------------------- réseaux sociaux ------------------------------------------------------->
-                    <div class="socials">
-                        <ul>
+                    <div class="user-nav">
+                        <ul class="socials">
                             <li>
                                 <a href="#" title="Suive-nous sur instagram">
-                                    <img src="assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
+                                    <img src="assets/images/icone/instagram-white.png" alt="ouvrir notre page Instagram">
                                 </a>
                             </li>
                             <li>
                                 <a href="#" title="Suive-nous sur facebook">
-                                    <img src="assets/images/icone/facebook-black.png" alt="ouvrir notre page Facebook">
+                                    <img src="assets/images/icone/facebook-white.png" alt="ouvrir notre page Facebook">
                                 </a>
                             </li>
                         </ul>
@@ -116,7 +127,7 @@
             <section class="hero-banner">
                 <div class="container-fluid">
                     <!------------------------------- video d'accueil ------------------------------------------------------->
-                        <video src="assets/images/illustration/home.mp4"></video>
+                        <video src="assets/images/illustration/home.mp4" type="video/mp4" autoplay muted loop playsinline></video>
                         <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                     <!------------------------------- Formulaire ------------------------------------------------------->
                     <div class="form">
@@ -439,6 +450,6 @@
                 </div>
             </div>
         </footer>
-        <script src="script.js"></script>
+        <script src="javascript/script.js"></script>
     </body>
 </html>

@@ -12,41 +12,90 @@ header{
         background-color: $background-transparent;
         padding-top : 0.6rem;
         padding-bottom: 0.6rem;
-    }
-    nav{
-        @include flex(row,space-between, center);
-        width : 90%;
-        .secondary-button{
-            margin-left:4rem;
+        nav{
+            @include flex(row,space-between, center);
+            width : 90%;
+            .secondary-button{
+                margin-left:4rem;
+            }
+        }
+        .navbar{
+            @include flex(row,space-between, center);
+            gap:$x-gap-m;
+        }
+        .socials{
+            @include flex(row,space-between, center);
+            gap:$x-gap-s;
+        }
+        .primary-nav, .user-nav{
+            @include flex(row,space-between, center);
+            gap:$x-gap-m;
+        }
+        .logo{
+            img{
+                width:10rem;
+            }
+            margin-right:1rem;
+        }
+        a{
+            text-decoration: none;
+            color:$primary-color;
+            @include text($primary-color,$quartenary-font,$text-size:1.25rem)
+        }
+        li{
+            list-style: none;
+        }
+        .line{
+            box-shadow: 0 2px 0 #64626240;
         }
     }
-    .navbar{
-        @include flex(row,space-between, center);
-        gap:$x-gap-m;
-    }
-    .socials{
-        @include flex(row,space-between, center);
-        gap:$x-gap-s;
-    }
-    .primary-nav, .user-nav{
-        @include flex(row,space-between, center);
-        gap:$x-gap-m;
-    }
-    .logo{
-        img{
-            width:10rem;
+
+    .mobile-nav{
+        position:absolute;
+        top :0;
+        z-index:10;
+        padding-top : 2rem;
+        padding-bottom: 0.6rem;
+        .burger-nav{
+            img{
+                width : 2rem;
+            }
         }
-        margin-right:1rem;
+        nav{
+            @include flex(row,space-between, start);
+            width : 90%;
+        }
+        .navbar{
+            @include flex(column,space-between, start);
+            background-color: $background-transparent;
+        }
+        .socials{
+            @include flex(row,space-between, center);
+            gap:$x-gap-s;
+            flex-wrap : nowrap;
+        }
+        .primary-nav{
+            @include flex(column,start, start);
+        }
+        a{
+            text-decoration: none;
+            color:$primary-color;
+            @include text($primary-color,$quartenary-font,$text-size:1.25rem)
+        }
+        li{
+            list-style: none;
+            width : 100%;
+            padding : calc($y-gap-s / 4);
+        }
+        .in-page{
+            background-color: $terciary-color;
+        }
     }
-    a{
-        text-decoration: none;
-        color:$primary-color;
-        @include text($primary-color,$quartenary-font,$text-size:1.25rem)
-    }
-    li{
-        list-style: none;
-    }
-    .line{
-        box-shadow: 0 2px 0 #64626240;
-    }
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 1090px){
+
 }

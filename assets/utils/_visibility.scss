@@ -10,3 +10,22 @@
 .d-yes{
     display:block;
 }
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px){
+    .desktop
+    {
+        display:none;
+    }
+}
+
+/**
+**************** Desktop **************************
+**/
+@media (min-width: 769px){
+    .mobile
+    {
+        display:none;
+    }
+}

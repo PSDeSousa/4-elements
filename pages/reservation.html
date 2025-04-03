@@ -4,12 +4,13 @@
         <meta charset="UFT-8">
         <link href="../assets/css/styles.css" rel="stylesheet">
         <link href="../assets/css/main.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="../favicone.png">
         <title>4-elements</title>
     </head>
     <body>
         <header>
             <!------------------------------- Nav Desktop ------------------------------------------------------->
-            <div class="container-fluid desktop-nav line">
+            <div class="container-fluid desktop-nav desktop line">
                 <nav>
                     <!------------------------------- Logo et nav ------------------------------------------------------->
                     <div class="primary-nav">
@@ -63,39 +64,50 @@
                 </nav>
             </div>
             <!------------------------------- Nav Mobile (masqué en Desktop) ------------------------------------------------------->
-            <div class="container-fluid mobile-nav">
-                <nav class="d-no">
+            <div class="container-fluid mobile-nav mobile">
+                <nav>
                     <div class="primary-nav">
-                        <div class="burger-nav">
-                            <a href="#" title="réservez un séjour de rêve dans un hôtel 4 éléments">
-                                <img src="../assets/images/icone/burger-nav.png" alt="menu">
+                        <div id="burgerMenu" class="burger-nav">
+                            <a href="#" title="accéder au menu">
+                                <img src="../assets/images/icone/burger-nav-black.png" alt="menu">
+                            </a>
+                        </div>
+                        <!--------------------Affichage quand le burger est cliqué----------------->
+                        <div id="closeMenu" class="burger-nav d-no">
+                            <a href="#" title="fermer le menu">
+                                <img src="../assets/images/icone/close-black.png" alt="fermer le menu">
                             </a>
                         </div>
                         <!------------------------------- Nav mobile à afficher sur clic burger ------------------------------------------------------->
-                        <ul class="navbar d-no">
-                            <li>
-                                <a href="feu.html" title="réservez notre hôtel Feu">Feu</a>
-                            </li>
-                            <li>
-                                <a href="#" title="réservez notre hôtel Air">Air</a>
-                            </li>
-                            <li>
-                                <a href="#" title="réservez notre hôtel Terre">Terre</a>
-                            </li>
-                            <li>
-                                <a href="#" title="réservez notre hôtel Eau">Eau</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Contactez-nous">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
-                            </li>
-                        </ul>
+                        <div id="mobileNav" class="d-no">
+                            <ul class="navbar">
+                                <li>
+                                    <a href="../index.html" title="Découvrez nos hôtels">accueil</a>
+                                </li>
+                                <li>
+                                    <a href="feu.html" title="réservez notre hôtel Feu">Feu</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="réservez notre hôtel Air">Air</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="réservez notre hôtel Terre">Terre</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="réservez notre hôtel Eau">Eau</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Contactez-nous">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Connectez-vous à votre compte pour bénéficier d'avantages membres 4 éléments">Se connecter</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!------------------------------- réseaux sociaux ------------------------------------------------------->
-                    <div class="socials">
-                        <ul>
+                    <div class="user-nav">
+                        <ul class="socials">
                             <li>
                                 <a href="#" title="Suive-nous sur instagram">
                                     <img src="../assets/images/icone/instagram-black.png" alt="ouvrir notre page Instagram">
@@ -349,5 +361,6 @@
             </div>
         </footer>
         <script src="../javascript/script-reservation.js"></script>
+        <script src="../javascript/script.js"></script>
     </body>
 </html>

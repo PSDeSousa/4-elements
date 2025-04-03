@@ -113,7 +113,7 @@ header .desktop-nav {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
-header nav {
+header .desktop-nav nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -121,10 +121,10 @@ header nav {
   flex-wrap: wrap;
   width: 90%;
 }
-header nav .secondary-button {
+header .desktop-nav nav .secondary-button {
   margin-left: 4rem;
 }
-header .navbar {
+header .desktop-nav .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -132,7 +132,7 @@ header .navbar {
   flex-wrap: wrap;
   gap: 2rem;
 }
-header .socials {
+header .desktop-nav .socials {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -140,7 +140,7 @@ header .socials {
   flex-wrap: wrap;
   gap: 1.3rem;
 }
-header .primary-nav, header .user-nav {
+header .desktop-nav .primary-nav, header .desktop-nav .user-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -148,13 +148,13 @@ header .primary-nav, header .user-nav {
   flex-wrap: wrap;
   gap: 2rem;
 }
-header .logo {
+header .desktop-nav .logo {
   margin-right: 1rem;
 }
-header .logo img {
+header .desktop-nav .logo img {
   width: 10rem;
 }
-header a {
+header .desktop-nav a {
   text-decoration: none;
   color: #363A2B;
   color: #363A2B;
@@ -162,13 +162,74 @@ header a {
   font-size: 1.25rem;
   margin: 0.5rem 0;
 }
-header li {
+header .desktop-nav li {
   list-style: none;
 }
-header .line {
+header .desktop-nav .line {
   box-shadow: 0 2px 0 rgba(100, 98, 98, 0.2509803922);
 }
+header .mobile-nav {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  padding-top: 2rem;
+  padding-bottom: 0.6rem;
+}
+header .mobile-nav .burger-nav img {
+  width: 2rem;
+}
+header .mobile-nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  width: 90%;
+}
+header .mobile-nav .navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  background-color: rgba(229, 224, 220, 0.8901960784);
+}
+header .mobile-nav .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  flex-wrap: nowrap;
+}
+header .mobile-nav .primary-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+header .mobile-nav a {
+  text-decoration: none;
+  color: #363A2B;
+  color: #363A2B;
+  font-family: "Karla Medium", sans-serif;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+header .mobile-nav li {
+  list-style: none;
+  width: 100%;
+  padding: 0.375rem;
+}
+header .mobile-nav .in-page {
+  background-color: #D9C7B3;
+}
 
+/**
+**************** Mobile **************************
+**/
 footer .row {
   display: flex;
   flex-direction: row;
@@ -234,9 +295,12 @@ footer .row .column:last-child .foot-nav {
 
 .hero-banner {
   position: relative;
+  width: 100%;
 }
 .hero-banner video {
-  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .hero-banner h1 {
   position: absolute;
@@ -257,6 +321,8 @@ footer .row .column:last-child .foot-nav {
 .hero-banner .form input, .hero-banner .form select {
   background-color: #E1D2C2;
   height: 3.5rem;
+  width: 100%;
+  padding: 1.3rem;
 }
 .hero-banner .form .form-row {
   display: flex;
@@ -267,13 +333,16 @@ footer .row .column:last-child .foot-nav {
   gap: 1.3rem;
 }
 .hero-banner .form .form-column {
-  flex: 1 1 calc(40% - 1.3rem);
+  flex: 1.5 1 calc(38% - 1.3rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
   gap: 1.5rem;
+}
+.hero-banner .form .form-column:nth-child(2) {
+  flex: 1 1 calc(24% - 1.3rem);
 }
 .hero-banner .form .form-row:last-child {
   display: flex;
@@ -718,6 +787,7 @@ footer .row .column:last-child .foot-nav {
 .reservation .form-reservation input, .reservation .form-reservation select {
   background-color: #E1D2C2;
   height: 3.5rem;
+  padding: 1.3rem;
 }
 .reservation .form-reservation .primary-button {
   margin-bottom: 1.5rem;
@@ -826,6 +896,23 @@ footer .row .column:last-child .foot-nav {
 
 .d-yes {
   display: block;
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px) {
+  .desktop {
+    display: none;
+  }
+}
+/**
+**************** Desktop **************************
+**/
+@media (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
