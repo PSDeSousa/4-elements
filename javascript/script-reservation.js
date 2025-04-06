@@ -99,7 +99,6 @@ function showError(fieldId, message) {
     let span = document.getElementById(fieldId + "Error");
     if (span) {
     span.textContent = message;
-    console.log(message);
     formError = true;
     }
 }
@@ -223,8 +222,6 @@ form.addEventListener('submit', function(e) {
     }else{
         localStorage.setItem("room", room);
     }
-    console.log(hotel);
-    console.log(room);
     //Nb convives
     initError("nbConvive");
     let nbConvive = parseInt(document.getElementById("nbConvive").value);
@@ -301,8 +298,6 @@ form.addEventListener('submit', function(e) {
     if (room === "suite"){
         prixTotal = prixTotal + tarifs.suite * nights;
     }
-    console.log(hotel);
-    console.log(room);
     //Affichage summuary
     if (!formError){
         let contenu = "<h3>Votre réservation :</h3>";
@@ -329,7 +324,6 @@ function toggle(tOption,tForm){
 //Scrute le bouton hotel du formulaire
 document.getElementById("hotel").addEventListener("change", function(){
     hotel = document.getElementById("hotel").value.trim();
-    console.log(hotel);
     toggle(hotel === "feu",roomChoise);
 })
 

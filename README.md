@@ -1,25 +1,21 @@
-# TEMPLATE-PROJET
-# 
+# 4-elements
+Fichier 4-elements
+Bienvenue dans le projet **4-elements**, un site de réservation de locations de vacances
 
-Bienvenue dans le projet **xxx**, une application web permettant :
 ## 🚀 Fonctionnalités
 
-- 🛒 Sélection de produits (burgers, boissons, desserts…)
-- 💳 Paiement simulé (CB ou comptoir)
-- 🖥️ Interface responsive avec Bootstrap
-- 🎨 Styles personnalisés via SCSS / CSS
-- 📜 Affichage du récapitulatif de commande
+- affichage des hôtels
+- formulaire de réservation
 
 ## 🛠️ Technologies utilisées
 
 - HTML5 / CSS3 / SCSS
 - JavaScript Vanilla
-- Bootstrap 5
 - Git / GitHub
 
 ## 📂 Structure du projet
 
-projet-mcdo/
+projet-zenbnb/
 ├── assets/
 │   └── images/             # Icônes et images
 │   └── base/               # Fichiers SCSS
@@ -27,25 +23,23 @@ projet-mcdo/
 │   └── main.css            # Fichier CSS compilé
 ├── js/
 │   └── script.js           # Code JavaScript
-├── commande.html           # Page de commande
 ├── index.html              # Page d'accueil
 └── README.md               # Documentation du projet
 ## 📦 Installation
 
 1. Clone le dépôt :
    
-bash
-   git clone https://github.com/xxxx
+   git clone https://github.com/PSDeSousa/4-elements.git
    
 2. Ouvre le fichier `index.html` dans ton navigateur.
 
-## ✅ À venir
 
-- Connexion à une base de données
 
-## 🙌 Contributeurs
+## 🙌 Auteur
 
 - [PSDeSousa](https://github.com/PSDeSousa)
+- Webecom promo 2025
+
 
 ## 📄 Licence
 

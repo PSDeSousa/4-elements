@@ -59,9 +59,37 @@ p {
   margin: 0.5rem 0;
 }
 
+.bold-text {
+  color: #4F6234;
+  font-family: "Karla Bold", sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
 /**
 **************** Mobile **************************
 **/
+@media (max-width: 769px) {
+  h1 {
+    color: #D9C7B3;
+    font-family: "Playfair Display Regular", sans-serif;
+    font-size: 3.125rem;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  h2 {
+    color: #363A2B;
+    font-family: "Playfair Display Medium", sans-serif;
+    font-size: 4rem;
+    margin: 0.5rem 0;
+  }
+  h4 {
+    color: #363A2B;
+    font-family: "Playfair Display Bold", sans-serif;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+}
 .container-fluid {
   width: 100%;
   display: flex;
@@ -172,7 +200,7 @@ header .mobile-nav {
   position: absolute;
   top: 0;
   z-index: 10;
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 0.6rem;
 }
 header .mobile-nav .burger-nav img {
@@ -184,7 +212,7 @@ header .mobile-nav nav {
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
-  width: 90%;
+  width: 72%;
 }
 header .mobile-nav .navbar {
   display: flex;
@@ -283,7 +311,7 @@ footer .row .column ul li {
 footer .row .column ul li a {
   color: #363A2B;
   font-family: "Karla Regular", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin: 0.5rem 0;
 }
 footer .row .column:last-child {
@@ -293,6 +321,28 @@ footer .row .column:last-child .foot-nav {
   height: 100%;
 }
 
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px) {
+  footer .container-fluid {
+    width: 72%;
+    margin: auto;
+  }
+  footer .container-fluid .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  footer .container-fluid .row .column > p {
+    width: 100%;
+  }
+  footer .container-fluid .row .column:nth-child(2) li {
+    margin: 0px;
+  }
+}
 .hero-banner {
   position: relative;
   width: 100%;
@@ -323,6 +373,11 @@ footer .row .column:last-child .foot-nav {
   height: 3.5rem;
   width: 100%;
   padding: 1.3rem;
+  border-radius: 8px;
+  border: none;
+}
+.hero-banner .form label {
+  font-family: "Karla Regular", sans-serif;
 }
 .hero-banner .form .form-row {
   display: flex;
@@ -368,6 +423,59 @@ footer .row .column:last-child .foot-nav {
   object-position: center 80%;
 }
 
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px) {
+  .hero-banner h1 {
+    position: absolute;
+    top: 30%;
+    transform: translatey(-25%);
+  }
+  .hero-banner video {
+    height: 90vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .hero-banner .form {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 72%;
+    transform: translate(-50%, 50%);
+  }
+  .hero-banner .form input, .hero-banner .form select {
+    background-color: #E1D2C2;
+    height: 2.6rem;
+    width: 100%;
+    padding: 0.65rem;
+    border-radius: 8px;
+    border: none;
+  }
+  .hero-banner .form h4 {
+    text-align: center;
+  }
+  .hero-banner .form .form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .hero-banner .form .form-row .form-column:nth-child(2) input {
+    text-align: center;
+  }
+  .hero-banner .form .form-column {
+    flex: 1 1 calc(100% - 1.3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
 .description .row:first-child {
   margin-top: 14rem;
 }
@@ -393,6 +501,12 @@ footer .row .column:last-child .foot-nav {
 }
 .information .container .row article .content {
   width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 .information .container .row article .content .cell {
   width: 30rem;
@@ -470,6 +584,32 @@ footer .row .column:last-child .foot-nav {
   gap: 1.3rem;
 }
 
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px) {
+  .information .container .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .information .container .row article .content {
+    width: 100%;
+  }
+  .information .container .row article .content .cell {
+    width: 19rem;
+    height: 21rem;
+    overflow: hidden;
+  }
+  .information .container .row article .content .cell img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
 .general-info .row {
   width: 100%;
   display: flex;
@@ -551,6 +691,9 @@ footer .row .column:last-child .foot-nav {
 .primary-button p {
   color: #FFFFFF;
 }
+.primary-button p {
+  font-size: 1.8rem;
+}
 
 .secondary-button {
   border-radius: 6px;
@@ -596,6 +739,12 @@ footer .row .column:last-child .foot-nav {
 }
 .hotel-card article {
   flex: 1 1 calc(40% - 4.1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 .hotel-card .gallery {
   flex: 1.5 1 calc(60% - 4.1rem);
@@ -616,8 +765,20 @@ footer .row .column:last-child .foot-nav {
   height: 100%;
   object-fit: cover;
 }
-.hotel-card .gallery .cell:nth-child(2) {
-  width: 7rem;
+.left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .left-card {
@@ -715,6 +876,52 @@ footer .row .column:last-child .foot-nav {
   object-fit: cover;
 }
 
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px) {
+  .left, .right {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .left-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .hotel-card {
+    width: 72%;
+    gap: 0.75rem;
+    margin: auto;
+  }
+  .hotel-card article {
+    flex: 1 1 calc(40% - 4.1rem);
+  }
+  .hotel-card .gallery {
+    flex: 1.5 1 calc(60% - 4.1rem);
+    overflow: hidden;
+  }
+  .hotel-card .gallery .gallery-row {
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: max-content;
+  }
+  .hotel-card .gallery .cell {
+    width: 18rem;
+    height: 23rem;
+    overflow: hidden;
+  }
+  .hotel-card .gallery .cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 .carousel {
   flex: 1.5 1 calc(60% - 4.1rem);
   overflow: hidden;
@@ -788,6 +995,8 @@ footer .row .column:last-child .foot-nav {
   background-color: #E1D2C2;
   height: 3.5rem;
   padding: 1.3rem;
+  border-radius: 8px;
+  border: none;
 }
 .reservation .form-reservation .primary-button {
   margin-bottom: 1.5rem;

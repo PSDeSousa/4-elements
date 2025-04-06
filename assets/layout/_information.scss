@@ -10,9 +10,10 @@
             @include flex(row,space-between,start);
             //gap:$x-gap-l;
             article{
-                //flex : 1 1 calc(50% - $x-gap-l);
                 .content{
                     width : 30rem;
+                    @include flex(column, space-evenly, start);
+                    gap: $y-gap-s;
                     .cell{
                         width : 30rem;
                         height : 20rem;
@@ -84,4 +85,36 @@
             }
         }
     }
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px){
+    .information{
+        .container{
+            .row{
+                width:100%;
+                @include flex(row,space-between,start);
+                //gap:$x-gap-l;
+                article{
+                    //flex : 1 1 calc(50% - $x-gap-l);
+                    .content{
+                        width : 100%;
+                        .cell{
+                            width : 19rem;
+                            height : 21rem;
+                            overflow: hidden;
+                            img{
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

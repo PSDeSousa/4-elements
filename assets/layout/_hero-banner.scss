@@ -31,6 +31,11 @@
             height:3.5rem;
             width: 100%;
             padding : $x-gap-s;
+            border-radius : 8px;
+            border : none;
+        }
+        label{
+            font-family: $primary-font;
         }
         .form-row{
             @include flex(row,space-between, start);
@@ -63,4 +68,57 @@
         object-fit: cover;
         object-position: center 80%;
     }
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px){
+    .hero-banner{
+        h1{
+            position : absolute;
+            top : 30%;
+            transform: translatey(-25%);
+        }
+        video{
+            height:90vh;
+            object-fit: cover;
+            object-position: center ;
+        }
+    .form{
+        position : absolute;
+        bottom : 0%;
+        left: 50%;
+        width:72%;
+        transform: translate(-50%, 50%);
+        input, select{
+            background-color: $input-color;
+            height:2.6rem;
+            width: 100%;
+            padding : calc($x-gap-s / 2);
+            border-radius : 8px;
+            border : none;
+        }
+
+        h4{
+            text-align: center;
+        }
+        .form-row{
+            @include flex(row,space-between, start);
+            gap:calc($y-gap-s / 2);
+            .form-column:nth-child(2){
+                input{
+                    text-align: center;
+                }
+            }
+        }
+        .form-column{
+            flex : 1 1 calc(100% - $x-gap-s);
+            @include flex(column,space-between, center);
+            gap: calc($y-gap-s / 2);
+        }
+    }
+    }
+
+
 }

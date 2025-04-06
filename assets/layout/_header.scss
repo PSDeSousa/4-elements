@@ -54,7 +54,7 @@ header{
         position:absolute;
         top :0;
         z-index:10;
-        padding-top : 2rem;
+        padding-top : 4rem;
         padding-bottom: 0.6rem;
         .burger-nav{
             img{
@@ -63,7 +63,7 @@ header{
         }
         nav{
             @include flex(row,space-between, start);
-            width : 90%;
+            width : 72%;
         }
         .navbar{
             @include flex(column,space-between, start);
@@ -96,6 +96,4 @@ header{
 /**
 **************** Mobile **************************
 **/
-@media (max-width: 1090px){
-
-}
+//@media (max-width: 1090px){}

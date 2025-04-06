@@ -13,13 +13,13 @@
         width: max-content; //pour empêcher le débordement
     }
 }
-
 .testimonials{
     .carousel-row{
         width : 100%;
         @include flex(row,space-between,start);
     }       
 }
+
 /**
 **************** Mobile **************************
 **/

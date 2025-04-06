@@ -32,7 +32,7 @@ footer{
                     @include flex(row,start, center);
                     gap:$x-gap-s;
                     a{
-                        @include text;
+                        @include text($primary-color,$primary-font,1.25rem);
                     }
                 }
             }
@@ -42,6 +42,32 @@ footer{
             flex : 1 1 calc(20% - $x-gap-m);
             .foot-nav{
                 height : 100%;
+            }
+        }
+    }
+}
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px){
+    footer{
+        .container-fluid{
+            width:72%;
+            margin:auto;
+            .row{
+                @include flex(column,space-between, start);
+                .column{
+                    >p{
+                        width:100%;
+                    }
+                    
+                }
+                .column:nth-child(2){
+                    li{
+                        margin:0px;
+                    }
+                }
             }
         }
     }

@@ -2,10 +2,11 @@
 <html lang="fr">
     <head>
         <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Séjour de luxe dans des sites exceptionnels</title>
         <link href="../assets/css/styles.css" rel="stylesheet">
         <link href="../assets/css/main.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="../favicone.png">
-        <title>4-elements</title>
     </head>
     <body>
         <header>
@@ -133,31 +134,35 @@
                             <!------------------------------- Article décrivant l'hôtel ------------------------------------------------------->
                             <article>
                                 <h2>Hôtel Feu</h2>
-                                <div class="location">
-                                    <img src="../assets/images/icone/map-pin.png" alt="location">
-                                    <p>Finlande</p>
-                                </div>
-                                <!------------------------------- Evaluation ------------------------------------------------------->
-                                <a href="#feuTestimonials">
-                                    <div class="rates">
-                                        <img src="../assets/images/icone/rate-star.png" alt="rate-evaluation">
-                                        <img src="../assets/images/icone/rate-star.png" alt="rate-evaluation">
-                                        <img src="../assets/images/icone/rate-star.png" alt="rate-evaluation">
-                                        <img src="../assets/images/icone/rate-star-light.png" alt="rate-evaluation">
-                                        <p>(325 avis)</p>
+                                <div>
+                                    <div class="location">
+                                        <img src="../assets/images/icone/map-pin.png" alt="location">
+                                        <p>Finlande</p>
                                     </div>
-                                </a>
-                                <!------------------------------- Description ------------------------------------------------------->
-                                <p>L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande.</p>
-                                <p>Feu de laterre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.</p>
-                            </article>
+                                    <!------------------------------- Evaluation ------------------------------------------------------->
+                                    <a href="#feuTestimonials">
+                                        <div class="rates">
+                                            <img src="../assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                            <img src="../assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                            <img src="../assets/images/icone/rate-star.png" alt="rate-evaluation">
+                                            <img src="../assets/images/icone/rate-star-light.png" alt="rate-evaluation">
+                                            <p>(325 avis)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <!------------------------------- Description ------------------------------------------------------->
+                                    <p>L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande.</p>
+                                    <p>Feu de laterre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.</p>
+                                </div>
+                         </article>
                             <!------------------------------- Gallerie d'images de l'hôtel (à dynamiser) ------------------------------------------------------->
-                            <div class="gallery">
-                                <div class="gallery-row right-card">
-                                    <div class="cell">
+                            <div id="feu" class="gallery">
+                                <div id="feuGallery" class="gallery-row right-card">
+                                    <div class="cell feu-image">
                                         <img src="../assets/images/illustration/feu-igloo.jpg" alt="">
                                     </div>
-                                    <div class="cell">
+                                    <div class="cell feu-image">
                                         <img src="../assets/images/illustration/feu-aurore.jpg" alt="">
                                     </div>
                                 </div>
@@ -281,8 +286,8 @@
                     <div class="row">
                         <h4>Services supplémentaires</h4>
                         <p>Les services supplémentaires ne sont pas comprises dans le tarif de base de la chambre.</p>
-                        <div class="carousel">
-                            <div class="carousel-row">
+                        <div id="service" class="carousel">
+                            <div id="serviceCarousel" class="carousel-row">
                                 <div class="service-card">
                                     <img src="../assets/images/illustration/driver.jpg" alt="car driver">
                                     <div class="content">
@@ -321,8 +326,8 @@
                     <div class="row">
                         <h4>Activités proches de l’hôtel</h4>
                         <p>Les activités ne sont pas comprises dans le tarif de base de la chambre.</p>
-                        <div class="carousel">
-                            <div class="carousel-row">
+                        <div id="activity" class="carousel">
+                            <div id="activityCarousel" class="carousel-row">
                                 <div class="activity-card">
                                     <img src="../assets/images/illustration/sled-dogs.jpg" alt="balade avec des chiens de traineaux">
                                     <div class="content">
@@ -348,7 +353,7 @@
                                     </div>
                                 </div>
                                 <div class="activity-card">
-                                    <img src="../assets/images/illustration/volcano.png" alt="découvrir les volcans">
+                                    <img src="../assets/images/illustration/volcano.jpg" alt="découvrir les volcans">
                                     <div class="content">
                                         <h4>Découvrir les volcans</h4>
                                         <p>Explorez le monde fascinant des volcans, plongez au cœur de paysages spectaculaires et laissez-vous émerveiller.</p>
@@ -360,7 +365,7 @@
                                     </div>
                                 </div>
                                 <div class="activity-card">
-                                    <img src="../assets/images/illustration/speleologie.png" alt="spéléologie">
+                                    <img src="../assets/images/illustration/speleologie.jpg" alt="spéléologie">
                                     <div class="content">
                                         <h4>Spéléologie</h4>
                                         <p>Aventurez-vous dans les profondeurs mystérieuses de la terre lors d'une passionnante et extraordinaires  séance de spéléologie.</p>
@@ -386,8 +391,8 @@
                 <div class="container">
                     <div class="row">
                         <h4>Avis client</h4>
-                        <div class="carousel">
-                            <div class="carousel-row">
+                        <div id="testimonial" class="carousel">
+                            <div id="testimonialCarousel" class="carousel-row">
                                 <div class="testimonial-card">
                                     <div class="card-head">
                                         <div class="cell">
@@ -581,6 +586,8 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
         <script src="../javascript/script.js"></script>
     </body>
 </html>

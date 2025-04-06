@@ -25,8 +25,22 @@ p{
 .legend{
     @include text($primary-color,$primary-font,0.9375rem);
 }
+.bold-text{
+    @include text($secondary-color,$bold-text-font,1rem);
+}
 
 /**
 **************** Mobile **************************
 **/
-//@media (max-width: 1090px) {}
+@media (max-width: 769px) {
+    h1{
+        @include text($terciary-color,$secondary-font-mobile,3.125rem);
+        text-align: center;
+    }
+    h2{
+        @include text($primary-color,$secondary-font,4rem);
+    }
+    h4{
+        @include text($primary-color,$terciary-font,1.1rem);
+    }
+}

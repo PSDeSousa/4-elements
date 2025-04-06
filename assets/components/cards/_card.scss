@@ -10,6 +10,8 @@
 
     article{
         flex : 1 1 calc(40% - $x-gap-l);
+        @include flex(column, space-between,start);
+        gap : $y-gap-s;
     }
     .gallery{
         flex : 1.5 1 calc(60% - $x-gap-l);
@@ -30,12 +32,17 @@
             }
         }
         .cell:nth-child(2){
-            width : 7rem;
-            //width : calc(20% - $x-gap-m);
+            //width : 7rem;
         }
     }
 
 
+}
+.left{
+    @include flex(row-reverse,start,center);
+}
+.right{
+    @include flex(row,end,center);
 }
 .left-card{
     @include flex(row-reverse,start,center);
@@ -43,7 +50,6 @@
 .right-card{
     @include flex(row,end,center);
 }
-
 .service-card{
     position : relative;
     width : 30rem;
@@ -119,5 +125,51 @@
                 object-fit: cover;
             }
         }
+    }
+}
+
+
+/**
+**************** Mobile **************************
+**/
+@media (max-width: 769px){
+    .left, .right{
+        @include flex(column-reverse,center,start);
+    }
+    .left-card{
+        @include flex(row,center,center);
+    }
+    .hotel-card{
+        width:72%;
+        gap:calc($y-gap-s / 2);
+        margin:auto;
+    
+        article{
+            flex : 1 1 calc(40% - $x-gap-l);
+        }
+        .gallery{
+            flex : 1.5 1 calc(60% - $x-gap-l);
+            overflow: hidden;
+            .gallery-row{
+                flex-wrap: nowrap;
+                gap : $x-gap-m;
+                width: max-content;
+            }
+            .cell{
+                width : 18rem;
+                height : 23rem;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height : 100%;
+                    object-fit: cover;
+                }
+            }
+            .cell:nth-child(2){
+                //width : 7rem;
+            }
+        }
+    
+    
     }
 }

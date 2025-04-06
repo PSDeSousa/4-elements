@@ -23,5 +23,15 @@
   font-family: "Karla Regular";
   src: url("../fonts/karla/Karla-Regular.ttf");
 }
+/** Karla Medium**/
+@font-face {
+  font-family: "Karla Medium";
+  src: url("../fonts/karla/Karla-Medium.ttf");
+}
+/** Karla Bold**/
+@font-face {
+  font-family: "Karla Bold";
+  src: url("../fonts/karla/Karla-Bold.ttf");
+}
 
 /*# sourceMappingURL=styles.css.map */
